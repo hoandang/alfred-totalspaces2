@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.khamza.totalspaces2</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>25338E2E-35A2-404C-B146-DC1145B7D91B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D59CB01C-0F4A-4D00-85F5-054C0E2B7066</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D59CB01C-0F4A-4D00-85F5-054C0E2B7066</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Khamza Davletov</string>
+	<key>description</key>
+	<string>Basic routines from TotalSpaces2</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>TotalSpaces</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ts</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string># Action constants that can specified additionally
+# after the keyword separated by a white space.
+
+SPACE_RENAME = "n"
+SPACE_ADD = "a"
+SPACE_REMOVE = "r"
+
+load "workflow.rb"
+
+InputFilter.populate_results("{query}")</string>
+				<key>title</key>
+				<string>Basic TotalSpaces2 commands</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>25338E2E-35A2-404C-B146-DC1145B7D91B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>load "workflow.rb"
+
+ActionRunner.exec_action("{query}")</string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D59CB01C-0F4A-4D00-85F5-054C0E2B7066</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>25338E2E-35A2-404C-B146-DC1145B7D91B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D59CB01C-0F4A-4D00-85F5-054C0E2B7066</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
