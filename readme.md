@@ -1,6 +1,6 @@
 # Alfred workflow for basic routines from TotalSpaces2
 
-Attempt to create basic TotalSpaces2 workflow in Alfred such as space (OS X virtual desktop) _switching_, _renaming_, _adding_ and _removing in intuitive way via Alfred's search bar.
+Attempt to create basic TotalSpaces2 workflow in Alfred such as space (OS X virtual desktop) _switching_, _renaming_, _adding_ and _removing_ in intuitive way via Alfred's search bar.
 
 ![Demo](http://i.imgur.com/Rr9tWOw.gif)
 
@@ -10,4 +10,4 @@ Attempt to create basic TotalSpaces2 workflow in Alfred such as space (OS X virt
 ```
 [sudo] gem install totalspaces2
 ```
-2. Use *TotalSpaces.alfredworkflow* file.
+2. Download and install **TotalSpaces.alfredworkflow** to Alfred.
